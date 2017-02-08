@@ -611,7 +611,7 @@ public class FlexibleSteppedProgressBar: UIView {
         
         var distanceBetweenCircles: CGFloat = 0
         
-        if let first = centerPoints.first, nbPoint > 2 {
+        if let first = centerPoints.first where nbPoint > 2 {
             let second = centerPoints[1]
             distanceBetweenCircles = second.x - first.x - 2 * aRadius
         }
